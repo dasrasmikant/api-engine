@@ -1,0 +1,74 @@
+[{
+    "method": "get",
+    "apiName": "/getUsers/:page",
+    "isRemoteAPI": 1,
+    "remoteApi": {
+      "paramType": "q",
+      "endPoint": "https://reqres.in/api/users/"
+    },
+    "auth": ""
+
+  },
+  {
+    "method": "get",
+    "apiName": "/getIp",
+    "isRemoteAPI": 1,
+    "remoteApi": {
+      "endPoint": "http://httpbin.org/ip"
+    },
+    "auth": ""
+  },
+  {
+    "method": "get",
+    "apiName": "/getUser/:users",
+    "isRemoteAPI": 1,
+    "remoteApi": {
+      "endPoint": "https://reqres.in/api/"
+    },
+    "auth": "basic"
+  },
+  {
+    "method": "post",
+    "apiName": "/postUser",
+    "isRemoteAPI": 1,
+    "remoteApi": {
+      "endPoint": "https://reqres.in/api/users"
+    },
+    "auth": "basic"
+  },
+  {
+    "method": "post",
+    "apiName": "/insertUser",
+    "isRemoteAPI": 0,
+    "businessClass": "user-controller",
+    "auth": "basic"
+  },
+  {
+    "method": "get",
+    "apiName": "/getEmployee/:job",
+    "isRemoteAPI": 0,
+    "businessClass": "get-user-controller",
+    "auth": "basic"
+  },
+  {
+    "method": "put",
+    "apiName": "/updateEmployee/:job",
+    "isRemoteAPI": 0,
+    "businessClass": "update-user-controller",
+    "auth": "basic"
+  },
+  {
+    "method": "delete",
+    "apiName": "/deleteEmployee",
+    "isRemoteAPI": 0,
+    "businessClass": "delete-user-controller",
+    "auth": "basic"
+  }, 
+  {
+    "method": "post",
+    "apiName": "/insertHording",
+    "isRemoteAPI": 0,
+    "businessClass": "hordig-insert-controller",
+    "auth": "basic"
+  }
+]

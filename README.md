@@ -5,7 +5,8 @@ A simple Library to generate templates for different type of projects such as AP
     npm i csm-ai
 
 # API Framework
-## Structure
+Structure
+------------
 ![Project Structure](https://raw.githubusercontent.com/dasrasmikant/assets/master/images/project-structure.jpg)
 - Define your APIs in the api.json file
 - Do the project configuration in project-config.js file. Define project Name, Mongo DB Connection details in this file 
@@ -20,8 +21,8 @@ A simple Library to generate templates for different type of projects such as AP
 - The business controller directory is created to store all business controller classes.
 
 
-## API Configuration
-
+API Configuration
+------------------------
 APIs will be created in the api.json file.
 
 **Calling a remote API** 

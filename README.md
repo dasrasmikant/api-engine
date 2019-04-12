@@ -1,10 +1,6 @@
-# csm-ai Genarator 
-A simple Library to generate templates for different type of projects such as API Framework, Chatbot Framework etc.
-
-## Installation
-    npm i csm-ai
-
 # API Framework
+This framework is mean for NodeJS API project by creation of APIs on configuration itself. 
+
 Structure
 ------------
 ![Project Structure](https://raw.githubusercontent.com/dasrasmikant/assets/master/images/project-structure.jpg)

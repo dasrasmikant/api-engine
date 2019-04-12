@@ -57,6 +57,28 @@ APIs will be created in the api.json file.
      }
 -   All configurations are like above  except businessClass
 -   The businessClass property define the class where teh API logic needs to defined.  
+  
+**businessClass**
+
+This is the class where you need to define your API business Login. The model of business class need to be like below.
+
+    const ResponseModel = require("../api-helper/res-model")
+    const MongoConnector=require("../api-helper/mongo-connector")
+    class ClsController{
+        constructor(param,body){        
+            this.param=param
+            this.body=body
+        }
+        execute(responseHandler){      
+            let objMongoConnector=new MongoConnector();       
+            objMongoConnector.insert(this.param,this.body,"hordingCollection",function(response){
+                //Passes your response object to the API Client
+                responseHandler(response);           
+            });       
+        }
+    }
+    module.exports=ClsController
+
 
 **Authentication**
 
